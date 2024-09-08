@@ -9,5 +9,7 @@ Enlight Code Academy is focused on delivering comprehensive education in coding 
 Key Features:
 
 Interactive courses taught by industry experts.
+
 Practical projects to build hands-on experience.
+
 A supportive community for collaboration and problem-solving.
