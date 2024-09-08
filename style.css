@@ -1,0 +1,261 @@
+/* Resetting some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background: #222;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.logo{
+  width: 100px;
+  cursor:pointer;
+  display: inline-block;
+  height: 50px;
+}
+
+header nav ul {
+  margin-bottom: 30;
+  list-style: none;
+  width:100%;
+  text-align: right;
+  padding-right: 60px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background: #444;
+}
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.dropbtn:hover {
+  background: #444;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f4a261;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Hero Section */
+.main {
+  background: url('Images/background3.jpeg') no-repeat center center/cover;
+  color: #fff;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main h2 {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.main p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.main .btn {
+  padding: 10px 20px;
+  background: #f4a261;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.main .btn:hover {
+  background: #e76f51;
+}
+
+/* About Section */
+.about {
+  background: #f4f4f4;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.2em;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Courses Section */
+.courses {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.courses h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.course-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.course-item {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.course-item h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #e76f51;
+}
+
+.course-item p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+  background: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header nav ul {
+      flex-direction: column;
+  }
+
+  .hero h2 {
+      font-size: 2.5em;
+  }
+
+  .hero p {
+      font-size: 1em;
+  }
+
+  .about h2,
+  .courses h2,
+  .contact h2 {
+      font-size: 2em;
+  }
+}
