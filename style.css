@@ -107,7 +107,7 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .main {
-  background: url('Images/background3.jpeg') no-repeat center center/cover;
+  background: url('images/background3.jpeg') no-repeat center center/cover;
   color: #fff;
   height: 80vh;
   display: flex;
